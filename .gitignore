@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/!SolusWeb/v17
+/SolusWeb/bin/Debug/net9.0
+/SolusWeb/obj
+/SolusWeb/.vs/SolusWeb/v17
+/SolusWeb/.vs/SolusWeb/FileContentIndex
+/.vs
