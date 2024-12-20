@@ -6,24 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SolusWeb</title>
     <base href="/" />
-    <link rel="stylesheet" href="css/app.css" />
-    <!-- If you add any scoped CSS files, uncomment the following to load them
-    <link href="SolusWeb.styles.css" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="css/app.css" /> -->
+    <link href="app.min.css" rel="stylesheet" />
+    <link type="image/x-icon" href="icon-192.png" rel="icon"/>
 </head>
 
-<body>
-    <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
-    </div>
-
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="." class="reload">Reload</a>
-        <span class="dismiss">🗙</span>
+<body class="from-violet-600 to-sky-500 bg-gradient-to-tr h-screen w-full">
+    <div id="app" class="">
+        <div class="absolute right-1/2 bottom-1/2  transform translate-x-1/2 translate-y-1/2 ">
+            <div class="linear-progress h-4 rounded-full overflow-hidden w-[50vw] relative bg-slate-400
+                after:bg-amber-500 after:absolute after:inset-0 after:origin-top-left
+                after:transition-transform after:[scale:var(--blazor-load-percentage,0%)_100%]">
+            </div>
+        </div>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
 </body>
